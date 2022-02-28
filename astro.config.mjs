@@ -8,5 +8,8 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 
 			}
 		],
-	}
+	},
+	buildOptions: {
+		site: "https://lmenjoulet.github.io",
+	},
 });
