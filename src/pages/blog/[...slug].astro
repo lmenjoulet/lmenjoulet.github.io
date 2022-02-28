@@ -1,0 +1,24 @@
+---
+import { getAllPosts } from '../../posts';
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+
+export async function getStaticPaths({ rss }) {
+	const posts = await getAllPosts();
+
+	return posts.map((p) => {
+		return {
+			params: { slug: p.href.replace('/blog/', '') },
+			props: { post: p },
+		}
+	});
+}
+
+const { post } = Astro.props;
+console.log(post.Content);
+---
+
+<MarkdownLayout content={post}>
+    <post.Content />
+</MarkdownLayout>
+
+

@@ -1,7 +1,12 @@
 ---
     import BaseLayout from '../../layouts/BaseLayout.astro';
+    import PostsList from '../../components/PostsList.svelte';
+
+    import { getAllPosts} from '../../posts';
+
+    const posts = await getAllPosts();
 ---
 
-<BaseLayout title="404" content="404 page not found">
-    <h1>blog</h1>
+<BaseLayout title="Posts list" description="Blog posts list">
+    <PostsList posts={posts}/>
 </BaseLayout>

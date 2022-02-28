@@ -8,7 +8,3 @@
         <img src={image_source} alt="contact_image" class="w-24 h-24 object-contain">
     </button>
 </form>
-
-<style global>
-    @import "../styles/global.css";
-</style>
