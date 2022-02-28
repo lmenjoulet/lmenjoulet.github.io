@@ -1,0 +1,20 @@
+---
+    import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404" content="404 page not found">
+    <div class=" grid place-items-center grow">
+        <div class="p-8 border-2 border-stone-900 max-w-sm rounded shadow-black/30 shadow-xl">
+            <h1 class="underline text-xl">
+                Erreur 404
+            </h1>
+            <p>
+                Il semblerait que la page que vous cherchez n'existe pas 😅
+            </p>
+        </div>
+    </div>
+</BaseLayout>
+
+<style global>
+        @import "../styles/global.css";
+</style>
