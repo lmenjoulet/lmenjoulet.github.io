@@ -10,7 +10,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 		],
 	},
 	buildOptions: {
-		site: "https://lmenjoulet.github.io",
+		site: "https://lmenjoulet.github.io/",
 		pageUrlFormat: "directory"
 	},
 });
