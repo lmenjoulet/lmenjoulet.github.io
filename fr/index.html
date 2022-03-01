@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="fr"><head>
+        <title>Loup Menjoulet</title>
+        <meta lang="fr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Loup Menjoulet page accueil site personnel">
+    <link rel="stylesheet" href="../assets/404.392c2f76.css">
+<script type="module" src="../assets/fr.43be1151.js"></script></head>    
+    <body class="bg-amber-100 text-stone-900 font-medium flex flex-col min-h-screen ">
+        <div class="grid grid-cols-3 bg-stone-900 place-items-center">
+            <a href="/" class="col-start-2 col-span-1 text-center text-amber-100 p-4 font-bold text-xl flex justify-center items-center">
+                <img src="/res/profil.jpg" alt="img_profil" class="h-16 rounded-full border-amber-100 border-2">
+                <span href="/" class="m-1">Loup Menjoulet</span>
+            </a>
+            <div>
+                <astro-root uid="67eYv"></astro-root>
+            </div>
+        </div>
+        <nav class="bg-stone-900 text-amber-100 p-4 grid grid-cols-3 shadow-lg shadow-stone-900/40">
+            <a href="/fr/cv" class="rounded border-2 border-stone-800 bg-stone-900 p-2 grow mx-1 text-center hover:shadow-black/50 shadow-black/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition duration-200">CV</a>
+            <a href="/contact" class="rounded border-2 border-stone-800 bg-stone-900 p-2 grow mx-1 text-center hover:shadow-black/50 shadow-black/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition duration-200">Contact</a>
+            <a href="/blog" class="rounded border-2 border-stone-800 bg-stone-900 p-2 grow mx-1 text-center hover:shadow-black/50 shadow-black/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition duration-200">Blog</a>
+        </nav>
+        <main class="grow flex flex-col items-center">
+            <div class="p-2 mx-auto max-w-2xl text-justify prose prose-headings:underline">
+        <h2 id="bienvenue-">Bienvenue !</h2><p>Ce site est un petit projet personnel de développement web. Bien que cela n’ait pas été développé dans ma formation, un petit peu de pratique dans ce domaine ne fait de mal.
+Actuellement étudiant à l’ESIREM Dijon dans le but d’obtenir un diplôme en sécurité et qualité des réseaux (4ème année sur 5), mes centres d’intérêts dans le domaine sont la cybersécurité (j’héberge un relai tor intermédiaire <a href="https://metrics.torproject.org/rs.html#details/A7572A5090591E3D7E8027F34F5DF05756EFFE89">@section9lair.tk</a>), et les environnements réseau et backend immuables et reproductibles (trop de mauvaises anecdotes de fichiers de configuration éparpillés rendant des migrations de sites ou de services impossibles alors que je suis à peine étudiant). Oui le DevOps m’intéresse, j’utilise <a href="https://nixos.org">NixOS</a> en système d’exploitation pour les serveurs que j’héberge, et <a href="https://docker.com">Docker</a> sur des applications spécifiques.</p><h2 id="et-ce-site-alors-">Et ce site alors ?</h2><p>La création de ce site étant un challenge personnel, quelques contraintes et objectifs techniques ont été choisis :</p><ul>
+<li>
+<p><strong>Pas de rendu côté client.</strong>
+Il ne manquerait plus qu’on ne trouve pas ce site en tapant mon nom sur Google ou qu’il mette 30 secondes à charger. SSR Oblige, je dois soit créer un site statique, soit utiliser des serveurs gérant le SSR. Exit React ou Svelte nature, Next.js ou SvelteKit minimum.</p>
+</li>
+<li>
+<p><strong>Minimum un nouvel outil d’appris.</strong>
+Le terme ‘outil’ est un peu vague, mais disons que remplacer Rollup par Snowpack pour bundler le JavaScript n’est pas suffisant, il faut que ce changement affecte le code que je produis.</p>
+</li>
+</ul><p>Ca n’est pas un cahier des charges bien épais, mais bon je m’amuse, je ne fais pas ce projet sous la contrainte, je le jure.</p><p>Une première version de ce site avait été réalisée avec le framework <a href="https://kit.svelte.dev/">SvelteKit</a>, parce que j’avais bien aimé Svelte de base, mais j’ai rapidement abandonné cette idée pour une raison simple :</p><ul>
+<li><strong>Pourquoi avoir besoin d’un backend ?</strong> Je veux dire, les quelques pages que mon site maigrichon auront à montrer pourront bien être rendues statiquement, non ? En plus un serveur NodeJS qui tourne consomme plus de ressources qu’un NGINX ou un Apache, pour pas grand chose dans mon cas, et on ne peut pas l’héberger n’importe ou contrairement à deux ou trois fichiers HTML (techniquement un serveur NGINX est un backend mais ne pinaillons pas).</li>
+</ul><p>Je me suis rapidement remis de ma déconfiture en découvrant <a href="https://astro.build">Astro</a>, un framework permettant de générer des sites statiques en pouvant utiliser plusieurs frameworks simultanément (On peut mélanger des composants React, Vue, Svelte, Angular, etc…). C’est sur ce framework qu’est bâti le site qui se présente devant vous, et vu que les chiffres ne mentent pas (enfin, pas trop) je vous invite à lancer <a href="https://developers.google.com/web/tools/lighthouse#devtools">Chrome lighthouse</a> si vous êtes sur un navigateur basé sur Chromium. En plus de ça, j’utilise <a href="https://tailwindcss.com/">Tailwind css</a> pour l’apparence du site, je l’ai d’ailleurs découvert avec plaisir à cette occasion.</p><p>Mon tech-stack complet pour ce projet est donc <strong>AST</strong> :</p><ul>
+<li><strong>A</strong> stro</li>
+<li><strong>S</strong> velte</li>
+<li><strong>T</strong> ailwind CSS</li>
+</ul><p>Il me manque le <strong>R</strong> et le <strong>O</strong> pour avoir un acronyme récursif et ainsi révolutionner le milieu des développeurs web ( le meilleur acronyme de stack gagne toujours).
+<strong>R</strong> pour Redis peut-être 🤔? Je sèche pour le O. De toute manière c’est un projet fait pour le plaisir, il pourra être étendu selon les envies.</p><h2 id="faq">F.A.Q</h2><p>Bon j’ai imaginé quelques questions qui fâchent dans ma tête, voilà voilà.</p><ul>
+<li>
+<p><strong>Combien de temps pour faire le site ?</strong> Environ 3h pour structure de base, j’ai du apprendre Tailwind sur le tas. Le remplissage des pages à pris plus de temps que je n’accepte d’admettre par contre, je ne sais pas écrire. Les pages sont rédigées en markdown au passage.</p>
+</li>
+<li>
+<p><strong>Des tas de technologies sont mentionnées, lesquelles sont maîtrisées dans le tas ?</strong> Euh, pas React, sincèrement désolé, j’aurais du faire plus m’y intéresser vu l’importance qu’il prend aujourd’hui pour construire des front-end, mais j’ai pêché par paresse et Svelte est trop confortable.</p>
+</li>
+<li>
+<p><strong>Il n’est fait nulle part la mention de PHP sur cette page, est-ce que…</strong> A HA, euh, enfin… désolé mais je ne peux pas en parler, trop de souvenirs, trop d’émotions.</p>
+</li>
+</ul><p>Spéciale dédicace <a href="https://fr.linkedin.com/in/clement-ballot">@Clément Ballot</a>, un jour je referais ce site sous Processing.</p>
+    </div>
+        </main>
+    
+
+
+
+</body></html>
