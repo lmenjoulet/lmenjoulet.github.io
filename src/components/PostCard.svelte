@@ -3,11 +3,16 @@
 </script>
 
 <li class="w-full">
-    <a href={post.href} class="flex flex-col gap-4 hover:shadow-md hover:shadow-black/50 hover:-translate-y-0.5 transition duration-200 rounded border-2 border-stone-900 p-2">
-        <h1 class="text-2xl underline">
-            {post.title}
-        </h1>
-        <p>
+    <a href={post.href} class="flex flex-col gap-4 shadow-md hover:shadow-lg shadow-black/50 hover:shadow-black/50 hover:-translate-y-0.5 transition duration-200 rounded border-2 border-stone-900 p-2">
+        <div class="flex justify-between" >
+            <h1 class="text-2xl underline">
+                {post.title}
+            </h1>
+            <p>
+                {post.lang}
+            </p>
+        </div>
+        <p class="text-ellipsis overflow-hidden">
             {post.description}
         </p>
         <div class="flex justify-between text-stone-600">

@@ -1,6 +1,6 @@
 ---
 
-layout: ../layouts/MarkdownLayout.astro
+layout: ../../layouts/MarkdownLayout.astro
 title: Loup Menjoulet
 description: Loup Menjoulet page accueil site personnel
 draft: false

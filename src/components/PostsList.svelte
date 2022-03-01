@@ -4,7 +4,7 @@
     export let posts;
 </script>
 
-<ul class="max-w-5xl flex flex-col items-center p-4 gap-4">
+<ul class="flex flex-col items-center p-4 gap-4 w-full max-w-5xl">
     {#each posts as post}
         <PostCard post={post}/>
     {/each}

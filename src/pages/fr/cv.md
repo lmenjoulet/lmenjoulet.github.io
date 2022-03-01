@@ -1,10 +1,9 @@
 ---
 
-layout: ../layouts/MarkdownLayout.astro
+layout: ../../layouts/MarkdownLayout.astro
 title: Loup Menjoulet
 description: Loup Menjoulet CV curriculum vitae
 draft: false
-
 ---
 
 # Curriculum Vitæ
