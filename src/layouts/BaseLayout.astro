@@ -24,7 +24,7 @@ const lang = getLanguageFromURL(path);
                 <img src="/res/profil.jpg" alt="img_profil" class="h-16 rounded-full border-amber-100 border-2">
                 <span href="/" class="m-1">Loup Menjoulet</span>
             </a>
-            {path.match(new RegExp(`^(\/fr(\/|$))`)) ? <LanguagePicker {path} client:load/>: ""}
+            {path.match(new RegExp(`^(\/${lang}(\/|$))`)) ? <LanguagePicker {path} client:load/>: ""}
         </div>
         <nav class="bg-stone-900 text-amber-100 p-4 grid grid-cols-3 shadow-lg shadow-stone-900/40">
             <a href={`/${lang}/cv`} class="rounded border-2 border-stone-800 bg-stone-900 p-2 grow mx-1 text-center hover:shadow-black/50 shadow-black/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition duration-200">CV</a>
