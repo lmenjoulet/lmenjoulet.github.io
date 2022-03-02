@@ -41,7 +41,7 @@ draft: false
 
 * __Web Student Cup__ (2020), concours de développement de site web sur 24 heures en équipe avec [Clément Ballot](https://fr.linkedin.com/in/clement-ballot) et [Hugo Math](https://fr.linkedin.com/in/hugo-math-b12250175), technologies utilisées : Angular, Firebase. Première place. (ESIREM, France).
 
-* __Astro Pi__ (2016-2017), compétition européenne, création d'un programme d'intérêt scientifique ou ayant pour but d'améliorer la qualité de vie des habitants de la Station Spatiale Internationale à l'aide d'un Raspberry Pi. Idée mise en place : Mesure de la vitesse moyenne de l'ISS par rapport à la terre grâce aux relevés de valeurs d'un capteur magnétique. technologies utilisées : Python, NumPy.
+* __Astro Pi__ (2016-2017), compétition européenne, création d'un programme d'intérêt scientifique ou ayant pour but d'améliorer la qualité de vie des habitants de la Station Spatiale Internationale à l'aide d'un Raspberry Pi. Idée mise en place : Mesure de la vitesse moyenne de l'ISS par rapport à la terre grâce aux relevés de valeurs d'un capteur magnétique. Highly commended, technologies utilisées : Python, NumPy.
 
 ## Expérience professionnelle
 
