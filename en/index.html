@@ -3,11 +3,11 @@
         <meta lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Loup Menjoulet personnal website landing page">
-    <link rel="stylesheet" href="../assets/en.9d4a2b3a.css">
+    <link rel="stylesheet" href="../assets/fr.090dbf2d.css">
 <script type="module" src="../assets/en.ce41a122.js"></script></head>    
     <body class="bg-amber-100 text-stone-900 font-medium flex flex-col min-h-screen ">
         <div class="grid grid-cols-3 bg-stone-900 place-items-center">
-            <a href="/" class="col-start-2 col-span-1 text-center text-amber-100 p-4 font-bold text-xl flex justify-center items-center">
+            <a href="/en" class="col-start-2 col-span-1 text-center text-amber-100 p-4 font-bold text-xl flex justify-center items-center">
                 <img src="/res/profil.jpg" alt="img_profil" class="h-16 rounded-full border-amber-100 border-2">
                 <span href="/" class="m-1">Loup Menjoulet</span>
             </a>
@@ -21,8 +21,36 @@
             <a href="/blog" class="rounded border-2 border-stone-800 bg-stone-900 p-2 grow mx-1 text-center hover:shadow-black/50 shadow-black/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition duration-200">Blog</a>
         </nav>
         <main class="grow flex flex-col items-center">
-            <div class="p-2 mx-auto max-w-2xl text-justify prose prose-headings:underline">
-        <h1 id="hello-there-">Hello there !</h1>
+            <div class="p-2 mx-auto max-w-5xl text-justify prose prose-headings:underline">
+        <h2 id="welcome-">Welcome !</h2><p>This website is a little personal project of web development. Even if it isn’t really part of my curriculum, a little bit of practice can’t hurt.
+I’m currently studying at ESIREM in France to get a degree in security and quality of networks (year 4 out of 5). My subjects of interest in this field are cybersecurity (I’m hosting at Tor relay <a href="https://metrics.torproject.org/rs.html#details/A7572A5090591E3D7E8027F34F5DF05756EFFE89">@section9lair.tk</a>) and immutable and reproducible network and backend environments (I’ve spent too much time gathering scattered config files and fixing config quirks and migrating websites and services while I’m only a student). So, yes, DevOps interests me a lot. I use <a href="https://nixos.org">NixOS</a> as my operating system for servers and <a href="https://docker.com">Docker</a> to manage specific apps.</p><h2 id="what-about-this-website-">What about this website ?</h2><p>The website in itself being a challenge, I’ve brought some rules and objectives :</p><ul>
+<li><strong>No client side rendering.</strong></li>
+</ul><p>Imagine not finding this website when searching my name online or having it loading for 30 plus seconds. As SSR is mandatory, I have to choose between dynamic page builders like SvelteKit or Next.js, or static sites generators, exit vanilla Svelte or React.</p><ul>
+<li><strong>One new technology learnt minimum</strong></li>
+</ul><p>The word “technology” is a bit vague, but let’s say that replacing Rollup by Snowpack to bundle my javascript doesn’t count. the technology has to impact the code I’m producing.</p><p>These specifications are not heavy, but it’s ok I’m having fun, I’m not doing this project under pressure I swear.</p><p>to do a brief history of this project, I did build a first version with <a href="https://kit.svelte.dev/">SvelteKit</a>, because I liked Svelte, but I quickly dropped this idea for a simple reason :</p><ul>
+<li><strong>Why would I need a backend ?</strong> I mean, the few pages generated for my site could easily be rendered statically, right ? Moreover, a NodeJS server consumes more power than a mere Apache or NGINX server, and it’s a bit less convenient to host than static webpages.</li>
+</ul><p>I quickly went back on track after discovering <a href="https://astro.build">Astro</a>, a static website generator allowing use of components from different frameworks at the same time (React, Vue, Angular, Svelte, etc…). I built the website you’re seeing using Astro and svelte components, but what is it worth ? Well numbers don’t lie and you can open <a href="https://developers.google.com/web/tools/lighthouse#devtools">Chrome lighthouse</a> if you’re on a chromium based website.</p><p>A few side notes : I use <a href="https://tailwindcss.com/">Tailwind css</a> for styling, I’ve discovered it during the project and it’s neat ! Also the website is hosted using github pages and it has an Github Action on each commit on the main branch to build it.</p><p>My tech-stack for this project is <strong>AST</strong> :</p><ul>
+<li>
+<p><strong>A</strong> stro</p>
+</li>
+<li>
+<p><strong>S</strong> velte</p>
+</li>
+<li>
+<p><strong>T</strong> ailwind CSS</p>
+</li>
+</ul><p>Only the <strong>R</strong> and the <strong>O</strong> are missing to complete my recursive acronym and win the Web development game (The best tech stack name always wins).
+<strong>R</strong> for Redis maybe 🤔? Still have no clue for the O. It’s a hobby project anyway, I can extend it how I want.</p><h2 id="faq">F.A.Q</h2><p>I’ve imagined a few annoying questions, here goes nothing.</p><ul>
+<li>
+<p><strong>How much time spent to make this website</strong> 20 hours maybe ? I made it in 4 days after my quarantine in Korea, it took me a bit of time to learn Tailwind, make the Github CI work and fill all of these pages (still haven’t finished though).</p>
+</li>
+<li>
+<p><strong>A lot of technologies are mentionned, which ones are mastered ?</strong> Well, not React, sincerely sorry. I should have done this project using a React framework seing how much it is important in frontend WebDev nowadays but I sinned out of laziness and Svelte is just too comfortable.</p>
+</li>
+<li>
+<p><strong>I can’t see PHP mentionned anywhere on this page, do you by any chance …</strong> A HA, well, ehm… sorry but I can’t talk about it, too many memories, too much emotion.</p>
+</li>
+</ul><p>Sup’ <a href="https://fr.linkedin.com/in/clement-ballot">@Clément Ballot</a>, one day i’ll remake this website using Processing.</p>
     </div>
         </main>
     
